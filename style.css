@@ -1,0 +1,144 @@
+body {
+    background-color: rgb(224, 219, 219);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 240px);
+}
+
+h1,
+h2,
+p {
+    margin-left: 2rem;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.top {
+    grid-column: span 2;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+h1 {
+    margin-top: 40px;
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+.top h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.top p {
+    color: hsl(218, 22%, 67%);
+}
+
+.left {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    color: hsl(210, 5%, 84%);
+    margin: 0;
+}
+
+#price {
+    margin-left: 2rem;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+button {
+    margin-top: 10px;
+    align-self: center;
+    width: 225px;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: hsl(71, 95%, 41%);
+}
+
+.right {
+    background-color: hsl(179, 48%, 54%);
+    color: hsl(210, 5%, 84%);
+    border-bottom-right-radius: 10px;
+}
+
+.right h2 {
+    color: white;
+}
+
+footer{
+    align-self: center;
+}
+
+@media (max-width: 375px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        height: 750px;
+    }
+
+    .grid-container {
+        width: 300px;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat 300px 200px 300px;
+    }
+
+    h1,
+    h2,
+    p,
+    #price {
+        margin-left: 1rem;
+    }
+
+    .top {
+        grid-column: 1;
+    }
+
+    .top h1 {
+        font-size: 20px;
+    }
+
+    .top h2 {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .top p {
+        font-size: 15px;
+    }
+
+    .left {
+        border-radius: 0;
+    }
+}
