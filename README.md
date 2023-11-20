@@ -16,7 +16,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
-- Live Site URL: [alextostring.github.io/qr-code-component/](https://alextostring.github.io/qr-code-component/)
+- Live Site URL: [alextostring.github.io/single-price-grid-component/](https://alextostring.github.io/single-price-grid-component/)
 
 ## My process
 
